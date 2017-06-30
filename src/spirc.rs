@@ -140,7 +140,7 @@ impl Spirc {
 
         let (cmd_tx, cmd_rx) = mpsc::unbounded();
 
-        let volume = 0xFFFF;
+        let volume = 0xFFFF / 2;
         let device = initial_device_state(name, volume);
         mixer.set_volume(volume);
 
